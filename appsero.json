@@ -1,0 +1,12 @@
+{
+    "exclude": [
+        "README.md",
+        "developers_read.me",
+        "appsero.json",
+        "composer.json",
+        "composer.lock",
+        ".gitignore",
+        "bitbucket-pipelines.yml"
+    ],
+    "name": "update-alt-attribute"
+}

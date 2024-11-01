@@ -1,0 +1,15 @@
+Available hooks
+---------------
+uaa_template_folders        - (filter) The array of all the folders where to look for a template. The first found template will be used so if you're adding a folder, add it to the beginning of the array.
+uaa_get_display_version     - (filter) The full text of the plugin(s) version.
+uaa_automatic_updaters_tabs - (filter) The array of tabs for the Automatic Updaters page. The id/key will be used to search for the appropriate template.
+uaa_clean_alt_string        - (filter) The clean string generated for the new attributes. Filter also gives the attachment_id and base file_name.
+uaa_manual_editor_filters   - (action) Will display the content in the Manual Editor header meant for the filtering
+uaa_manual_editor_args      - (filter) Query arguments for the list of images on the Manual Editor page
+
+
+Known Bugs
+----------
+- (on the Manual Editor page) The search field doesn't search in the Alt meta field '_wp_attachment_image_alt'
+- (on the Manual Editor page) If the filter As a Featured Image finds no images, it will display them all? Check other filters
+

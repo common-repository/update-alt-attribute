@@ -1,0 +1,98 @@
+#indexing_wrapper{
+    text-align: center;
+    margin-top: 50px;
+}
+
+#indexing_progress{
+    display: none;
+}
+#indexing_progress_bar_label{
+    text-align: center;
+    margin-top: 30px;
+}
+#indexing_progress_bar{
+    height: 30px;
+    width: 100%;
+    background: lightgray;
+    position: relative;
+    border: 1px solid gray;
+    margin-top: 10px;
+}
+#indexing_progress_bar_filler{
+    background: #0091cd;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+}
+#indexing_error{
+    display: none;
+}
+
+.dashboard_stats_row{
+    display: flex;
+    align-items: flex-start;
+    align-items: center;
+    justify-content: space-around;
+    margin: 50px auto 0;
+    max-width: 1700px;
+    width: 100%;
+}
+.dashboard_stats_row > div{
+    width: 100%;
+    max-width: 45%;
+}
+
+.stat_row > span{
+    display: inline-block;
+    min-width: 80px;
+    text-align: right;
+}
+
+.dashboard_stats_row .has_chart{
+    display: flex;
+    align-items: center;
+}
+.dashboard_stats_row .has_chart .the_chart{
+    max-width: 200px;
+    margin-right: 30px;
+}
+
+.chart_box{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    position: relative;
+    top: 1px;
+}
+.chart_box.chart_red{
+    background: rgb(255, 99, 132);
+}
+.chart_box.chart_green{
+    background: rgb(75, 192, 192);
+}
+.chart_box.chart_yellow{
+    background: rgb(255, 205, 86);
+}
+.chart_box.chart_grey{
+    background: rgb(201, 203, 207);
+}
+.chart_box.chart_blue{
+    background: rgb(54, 162, 235);
+}
+.chart_box.chart_red_light{
+    background: rgba(255, 99, 132, 0.6);
+}
+.chart_box.chart_green_light{
+    background: rgba(75, 192, 192, 0.6);
+}
+.chart_box.chart_yellow_light{
+    background: rgba(255, 205, 86, 0.6);
+}
+.chart_box.chart_grey_light{
+    background: rgba(201, 203, 207, 0.6);
+}
+.chart_box.chart_blue_light{
+    background: rgba(54, 162, 235, 0.6);
+}

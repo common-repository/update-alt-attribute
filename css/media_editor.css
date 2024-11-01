@@ -1,0 +1,199 @@
+#wpbody{
+    overflow-x: hidden;
+}
+#media_editor_header,
+#media_editor_control{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.control_column_switch{
+    margin-left: 10px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.control_column_switch.active{
+    color: #000;
+    cursor: initial;
+}
+.control_column_switch:not(.active):hover{
+    color: #18bc9c;
+}
+.control_column_switch:not(:last-of-type):after{
+    content: "|";
+    margin-left: 10px;
+    color: initial;
+}
+
+#image_filters > select:not(:last-of-type){
+    margin-right: 5px;
+}
+
+#media_editor{
+    margin-top: 20px;
+    display: none;
+}
+#media_editor thead th{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#media_editor thead th a{
+    padding: 4px;
+}
+
+#media_editor tr > [data-col_type]{
+    transition: all 300ms ease;
+    /* width: 13%; */
+    /* width: 16%; */
+    /* width: 200px; */
+}
+#media_editor tr > [data-col_type] > *:not(input):not(button){
+    opacity: 1;
+    transition: all 300ms ease;
+    overflow: hidden;
+    /* height: 60px; */
+}
+
+#media_editor tr > [data-col_type].horizontally_collapsed{
+    width: 0;
+    padding: 0;
+}
+#media_editor tr > [data-col_type].horizontally_collapsed > *{
+    opacity: 0;
+    height: 0;
+}
+
+#media_editor tr > th[data-col_type] > *:not(input):not(button){
+    display: inherit;
+    overflow: hidden;
+    max-height: 20px;
+}
+
+.column-attachment_image{
+    width: 50px;
+}
+.column-attachment_image a{
+    position: relative;
+    display: block;
+    width: 40px;
+}
+.column-attachment_image a #img_preview{
+    position: absolute;
+    left: 50px;
+    top: -130px;
+    background: #fff;
+    min-width: 70px;
+    min-height: 70px;
+    border: 1px solid gray;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+.column-attachment_image a #img_preview #img_info{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px 10px;
+    background: #fff;
+    color: initial;
+}
+.column-attachment_image a #img_preview img{
+    width: auto;
+    height: auto;
+    max-width: 500px;
+    max-height: 300px;
+}
+.column-attachment_image a img{
+    width: 40px;
+    height: auto;
+}
+
+.column-save{
+    width: 70px;
+}
+
+#media_editor tbody tr > *{
+    vertical-align: middle;
+}
+#media_editor tbody tr td input{
+    max-width: 100%;
+    width: 100%;
+}
+
+.btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 3px 15px;
+    font-size: 15px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.btn-success {
+    color: #ffffff;
+    background-color: #18bc9c;
+    border-color: #18bc9c;
+}
+.btn-success:hover, .btn-success:focus, .btn-success.focus, .btn-success:active, .btn-success.active, .open>.dropdown-toggle.btn-success {
+    color: #ffffff;
+    background-color: #128f76;
+    border-color: #11866f;
+}
+
+.load_ajax{
+    display: none;
+}
+
+.header_row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.wrapper_box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.wrapper_box > div:not(:last-child){
+    margin-right: 20px;
+}
+
+#per_page_box{
+    display: flex;
+    align-items: center;
+}
+#current-page-selector,
+#per_page_box select,
+#per_page_box input{
+    text-align: right;
+}
+#per_page_box select option{
+    /* padding-right: 10px; */
+}
+
+
+.image_used__section .image_used__post{
+    display: none;
+}
+
+
+
+/* * { */
+  /* background: #000 !important; */
+  /* color: #0aa !important; */
+  /* outline: solid #aa0 1px !important; */
+/* } */

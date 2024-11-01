@@ -1,0 +1,154 @@
+
+.wp-core-ui .button,
+.wp-core-ui .button-secondary,
+.wp-core-ui .button:active,
+.wp-core-ui .button-secondary:active,
+.wp-core-ui .button:focus,
+.wp-core-ui .button-secondary:focus{
+    color: #18bc9c;
+    border-color: #18bc9c;
+    box-shadow: none;
+}
+.wp-core-ui .button:hover,
+.wp-core-ui .button-secondary:hover{
+    color: #128f76;
+    border-color: #128f76;
+    box-shadow: none;
+}
+.wp-core-ui input[type=checkbox]:focus,
+.wp-core-ui input[type=color]:focus,
+.wp-core-ui input[type=date]:focus,
+.wp-core-ui input[type=datetime-local]:focus,
+.wp-core-ui input[type=datetime]:focus,
+.wp-core-ui input[type=email]:focus,
+.wp-core-ui input[type=month]:focus,
+.wp-core-ui input[type=number]:focus,
+.wp-core-ui input[type=password]:focus,
+.wp-core-ui input[type=radio]:focus,
+.wp-core-ui input[type=search]:focus,
+.wp-core-ui input[type=tel]:focus,
+.wp-core-ui input[type=text]:focus,
+.wp-core-ui input[type=time]:focus,
+.wp-core-ui input[type=url]:focus,
+.wp-core-ui input[type=week]:focus,
+.wp-core-ui select:focus,
+.wp-core-ui textarea:focus,
+.wp-core-ui input[type=checkbox]:active,
+.wp-core-ui input[type=color]:active,
+.wp-core-ui input[type=date]:active,
+.wp-core-ui input[type=datetime-local]:active,
+.wp-core-ui input[type=datetime]:active,
+.wp-core-ui input[type=email]:active,
+.wp-core-ui input[type=month]:active,
+.wp-core-ui input[type=number]:active,
+.wp-core-ui input[type=password]:active,
+.wp-core-ui input[type=radio]:active,
+.wp-core-ui input[type=search]:active,
+.wp-core-ui input[type=tel]:active,
+.wp-core-ui input[type=text]:active,
+.wp-core-ui input[type=time]:active,
+.wp-core-ui input[type=url]:active,
+.wp-core-ui input[type=week]:active,
+.wp-core-ui select:active,
+.wp-core-ui textarea:active {
+    border-color: #18bc9c;
+    box-shadow: none;
+    outline: none;
+}
+
+.uaa_master_button {
+    border: none;
+    padding: 10px 30px 10px 30px;
+    background-color: #0091cd;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.uaa_master_button:hover {
+    background-color: #11a2de;
+}
+
+.apple_toggle {
+    position: relative;
+}
+.apple_toggle input[type="checkbox"] {
+    opacity: 0;
+    position:absolute;
+}
+.apple_toggle label {
+    background-color: #EEEEEE;
+    border: 1px solid #BBBBBB;
+    /* border-radius: 20px 20px 20px 20px; */
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1) inset;
+    height: 28px;
+    position: relative;
+    width: 75px;
+    display: block;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+.apple_toggle input:checked ~ label {
+    background-color: #0091cd;
+    border: 1px solid #096C9D;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.25) inset;
+    transition: all 300ms ease;
+}
+.apple_toggle .toggle-handle {
+    background-color: #FFFFFF;
+    background-image: linear-gradient(to bottom, #FFFFFF 0px, #F2F2F2 100%);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    height: 28px;
+    position: absolute;
+    transition: all 300ms ease;
+    width: 28px;
+    z-index: 2;
+    pointer-events: none;
+}
+.apple_toggle input:checked + .toggle-handle {
+    border-color: #0A76AD;
+    -webkit-transform: translate3d(48px, 0px, 0px);
+    transform: translate3d(48px, 0px, 0px);
+}
+.apple_toggle label:after {
+    color: #777777;
+    content: "Off";
+    line-height: 28px;
+    position: absolute;
+    right: 13px;
+    text-shadow: 0 1px #FFFFFF;
+    text-transform: uppercase;
+    transition: all 300ms ease;
+}
+.apple_toggle input:checked ~ label:after {
+    color: #FFFFFF;
+    content: "On";
+    right: 40px;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.25);
+}
+
+a.light_link{
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 1px dotted #0091cd;
+    position: relative;
+    /* transition: all 300ms ease; */
+}
+a.light_link:hover{
+    /* border-bottom: 1px solid transparent; */
+}
+a.light_link:after{
+    content: " ";
+    width: 0;
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    margin: 0 auto;
+    border-bottom: 2px solid transparent;
+    transition: all 400ms ease;
+}
+a.light_link:hover:after{
+    content: " ";
+    width: 100%;
+    left: 0;
+    border-bottom: 2px solid #11a2de;
+}

@@ -1,0 +1,387 @@
+#automatic_updaters_header_info{
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#maui_logo{
+    margin-right: 20px;
+}
+#uaa_title{
+    margin: 0;
+}
+#uaa_version{
+    position: relative;
+    top: 1px;
+    margin-left: 20px;
+    min-width: 300px;
+    text-align: right;
+}
+
+.nav-tab-wrapper{
+    padding-left: 10px;
+}
+.nav-tab-active,
+.nav-tab-active:focus,
+.nav-tab-active:focus:active,
+.nav-tab-active:hover {
+    background: #fff;
+    border-bottom: 1px solid transparent;
+}
+
+#tab__go_pro{
+    padding: 5px 30px;
+}
+#tab__go_pro:not(.nav-tab-active){
+    background: #0091cd;
+    color: #fff;
+}
+
+.uaa_tab_content {
+    padding: 40px;
+    background-color: #fff;
+    border-left: 1px solid #c3c4c7;
+    border-bottom: 1px solid #c3c4c7;
+}
+.center {
+    text-align: center;
+    margin: 0 auto;
+}
+
+#processing_wrapper{
+    min-height: 105px;
+    border: 1px solid transparent;
+}
+
+.tab_dashboard{
+    display: flex;
+    align-items: center;
+}
+.tab_info{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tab_info_content{
+    padding: 10px;
+}
+.tab_info_content_row{
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+.tab_info_content_row:first-of-type{
+    margin-bottom: 18px;
+}
+.tab_info_content_row:not(:first-of-type){
+    margin-top: 6px;
+}
+.tab_info_content_row:last-of-type{
+    margin-top: 18px;
+}
+.tab_description{
+    width: 50%;
+    max-width: 600px;
+}
+.image_count{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 150px;
+    text-align: right;
+    margin-right: 3px;
+}
+
+.dashicons.success{
+    /* color: lightgray; */
+    /* color: gray; */
+    color: transparent;
+    color: green;
+}
+.dashicons.process{
+    color: green;
+}
+.dashicons.disabled{
+    /* color: #FF510B; */
+    color: lightgray;
+    /* color: gray; */
+}
+
+#update_media_button_wrapper {
+    margin-top: 35px;
+}
+
+#update_media_dry_run_wrapper{
+    margin-top: 5px;
+}
+#update_media_dry_run{
+    display: inline-block;
+    border-bottom: 1px solid lightgray;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: all 300ms ease;
+    color: gray;
+}
+#update_media_dry_run:hover{
+    border-bottom: 1px solid gray;
+    color: initial;
+}
+
+#update_media_progress{
+    display: none;
+}
+#update_media_progress_bar_label{
+    text-align: center;
+    margin-top: 30px;
+}
+#update_media_progress_bar{
+    height: 30px;
+    width: 100%;
+    background: lightgray;
+    position: relative;
+    border: 1px solid gray;
+    margin-top: 10px;
+}
+#update_media_progress_bar_filler{
+    background: #0091cd;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+}
+
+#update_media_nothing_to_do{
+    margin-top: 50px;
+}
+#update_media_nothing_to_do.hide{
+    display: none;
+}
+
+
+#result_of_media_update{
+    min-height: 500px;
+    /* padding-left: 50px; */
+}
+#result_of_media_update > *{
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+#result_of_media_update > h3{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+#result_of_media_update table{
+    border-spacing: 0;
+}
+#result_of_media_update table tr th{
+    border-bottom: 1px solid lightgray;
+}
+#result_of_media_update table tr th:not(:last-of-type),
+#result_of_media_update table tr td:not(:last-of-type){
+    border-right: 1px solid lightgray;
+}
+#result_of_media_update table tr th:nth-of-type(1),
+#result_of_media_update table tr td:nth-of-type(1){
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: right;
+}
+#result_of_media_update table tr th:nth-of-type(2),
+#result_of_media_update table tr td:nth-of-type(2),
+#result_of_media_update table tr th:nth-of-type(3),
+#result_of_media_update table tr td:nth-of-type(3){
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: left;
+}
+#result_of_media_update table tr th:nth-of-type(4),
+#result_of_media_update table tr th:nth-of-type(5),
+#result_of_media_update table tr th:nth-of-type(6),
+#result_of_media_update table tr th:nth-of-type(7){
+    width: 79px;
+}
+
+.show_list_table tr td,
+.show_list_table tr th {
+    text-align: center;
+}
+
+
+.settings_section{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+.settings_row{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+.settings_row span.settings_label{
+    display: block;
+    margin-right: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+.settings_row span.settings_label pre{
+    display: inline-block;
+    background: #fff;
+    padding: 0 4px;
+    margin: 0;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+}
+.settings_row input[type="number"]{
+    max-width: 77px;
+    text-align: right;
+}
+.settings_row span.settings_description{
+    color: gray;
+    margin-left: 20px;
+}
+
+.settings_row.needs_pro .apple_toggle{
+    opacity: 0.3;
+    cursor: no-drop;
+}
+.settings_row.needs_pro .apple_toggle label,
+.settings_row.needs_pro .apple_toggle input {
+    pointer-events: none;
+}
+.settings_row.needs_pro .dashicons-arrow-right {
+    color: #0091cd;
+}
+.settings_row.needs_pro .settings_description a {
+    text-decoration: none;
+    color: #0091cd;
+    transition: all 300ms ease, border 800ms ease;
+    border-bottom: 1px solid transparent;
+}
+.settings_row.needs_pro .settings_description a:hover {
+    color: #11a2de;
+    border-bottom: 1px solid #11a2de;
+}
+
+
+#save_settings{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.history_alt {
+    margin: 2% 2% 2% 0;
+    background: #fff;
+    margin-top: 2%;
+    padding: 2%;
+}
+
+
+/* update content */
+#update_content{
+    display: block;
+}
+#update_content_button_wrapper {
+    margin-top: 35px;
+}
+
+#update_content_dry_run_wrapper{
+    margin-top: 15px;
+    width: 98%;
+}
+#update_content_dry_run{
+    display: inline-block;
+    border-bottom: 1px solid lightgray;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: all 300ms ease;
+    color: gray;
+}
+#update_content_dry_run:hover{
+    border-bottom: 1px solid gray;
+    color: initial;
+}
+
+#update_content_progress{
+    display: none;
+}
+#update_content_progress_bar_label{
+    text-align: center;
+    margin-top: 30px;
+}
+#update_content_progress_bar{
+    height: 30px;
+    width: 100%;
+    background: lightgray;
+    position: relative;
+    border: 1px solid gray;
+    margin-top: 10px;
+}
+#update_content_progress_bar_filler{
+    background: #0091cd;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+}
+
+#update_content_nothing_to_do{
+    margin-top: 50px;
+}
+#update_content_nothing_to_do.hide{
+    display: none;
+}
+
+
+#result_of_content_update{
+    min-height: 500px;
+    /* padding-left: 50px; */
+}
+#result_of_content_update > *{
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+#result_of_content_update > h3{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+#result_of_content_update table{
+    border-spacing: 0;
+}
+#result_of_content_update table tr th{
+    border-bottom: 1px solid lightgray;
+}
+#result_of_content_update table tr th:not(:last-of-type),
+#result_of_content_update table tr td:not(:last-of-type){
+    border-right: 1px solid lightgray;
+}
+#result_of_content_update table tr th:nth-of-type(1),
+#result_of_content_update table tr td:nth-of-type(1){
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: right;
+}
+#result_of_content_update table tr th:nth-of-type(2),
+#result_of_content_update table tr td:nth-of-type(2),
+#result_of_content_update table tr th:nth-of-type(3),
+#result_of_content_update table tr td:nth-of-type(3){
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: left;
+}
+/* #result_of_content_update table tr th:nth-of-type(4),
+#result_of_content_update table tr th:nth-of-type(5),
+#result_of_content_update table tr th:nth-of-type(6),
+#result_of_content_update table tr th:nth-of-type(7){
+    width: 79px;
+} */
